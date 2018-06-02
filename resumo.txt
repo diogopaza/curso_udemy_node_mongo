@@ -11,9 +11,20 @@ EJS ===
 npm install ejs --save
 
 app.set('view engine','ejs')
+caso queira mudar caminho das app.set('views', './app/views')
 
 permitir escrever paginas html com javascript
 engine de paginas 
 
 informa para o expresse que o engine de view é o ejs
+--------------------------
+
+commonJS
+module.exports = variavel
+ou função anonima
+module.exports = function(){}
+
+define as construções de módulos
+permite incorporar modulos as node
+
 
