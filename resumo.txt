@@ -1,0 +1,19 @@
+curso node - - - udemy
+
+requisições http::
+
+npm install express -save(salva dentro do projeto o 
+nmp já baixa as dependencias o  module vai junto com
+o projeto)
+
+EJS ===
+
+npm install ejs --save
+
+app.set('view engine','ejs')
+
+permitir escrever paginas html com javascript
+engine de paginas 
+
+informa para o expresse que o engine de view é o ejs
+
