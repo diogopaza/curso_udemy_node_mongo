@@ -1,4 +1,6 @@
 app = require('./config/server')
+
+/*
 var home = require('./app/routes/home')
 home(app);
 
@@ -7,7 +9,7 @@ formulario_inclusao_noticia(app)
 
 var noticias = require('./app/routes/noticias')
 noticias(app) 
-
+*/
 
 
 

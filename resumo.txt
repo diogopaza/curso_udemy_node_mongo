@@ -1,9 +1,9 @@
 curso node - - - udemy
 
-requisições http::
+requisiï¿½ï¿½es http::
 
 npm install express -save(salva dentro do projeto o 
-nmp já baixa as dependencias o  module vai junto com
+nmp jï¿½ baixa as dependencias o  module vai junto com
 o projeto)
 
 EJS ===
@@ -16,15 +16,76 @@ caso queira mudar caminho das app.set('views', './app/views')
 permitir escrever paginas html com javascript
 engine de paginas 
 
-informa para o expresse que o engine de view é o ejs
+informa para o expresse que o engine de view ï¿½ o ejs
 --------------------------
 
 commonJS
 module.exports = variavel
-ou função anonima
+ou funï¿½ï¿½o anonima
 module.exports = function(){}
 
-define as construções de módulos
+define as construï¿½ï¿½es de mï¿½dulos
 permite incorporar modulos as node
+
+----------------------------------
+banco de dados mysql
+
+npm install mysql --save
+
+acessa a pasta bin
+mysql -u user -p para ele pedir senha
+
+show databases
+create database nome;
+use nome_tabela;
+show tables;
+select * from noticias;
+insert into table(campo1,campo2) values('valores','valores');
+
+------------------------------------------------
+consign
+modulo que permite incluir automaticamente
+diversos modulos da aplicaï¿½ï¿½o
+faz um scan e atribui todas as rotas automaticamente
+
+npm install consign --save
+
+
+consign().include('routes').into(app)
+faz um scan e joga tudo no servidor
+----------------------------------------------------
+
+models
+sï¿½o entidades do banco de dados
+cada models representa uma tabela do banco de dados
+
+-----------------------------------------------------
+
+classes javascript
+
+descreve estados e comportmentos de um objeto
+
+toda variavel que comeÃ§a com _ quer dizer que Ã© uma propriedade da classe
+--------------------------------------------------
+
+express validator
+validaÃ§Ãµes de dados
+
+npm install express-validator --save
+ele Ã© um middleware precisa incluir na inicializaÃ§Ã£o
+
+
+---------------------------------------
+
+alterar tabela
+alter table noticias add column resumo varchar(100);
+
+-------------------------------------
+permiti acessar arquivos estaticos
+
+app.use(express.static('./app/public'))
+
+
+
 
 
