@@ -10,6 +10,7 @@ module.exports.iniciaChat = function(application, req, res){
    if(erros){
        res.render("index", {validacao: erros})
    }
-
+    application.get('io').emit('msgParaCliente', 
+        {apelido: dadosForm.apelido, mensagem: 'acabou de entrar de no chat'})
     res.render("chat")
 }

@@ -86,6 +86,28 @@ permiti acessar arquivos estaticos
 app.use(express.static('./app/public'))
 
 
+-----------------------------------------------------
 
+PROJETO MULTI-ROOM CHAT
+
+1-criar diretorio
+2-iniciar npm - npm init
+3-express - npm install express --save
+4-ejs - npm install ejs --save
+5-consign - autoloader npm install consign --save
+6- bodyparser - contem elementos de formulario - npm install body-parser --save
+7- express validator - npm install express-validator --save
+
+---------------------------------------------------
+socket=
+
+websocket== comunicação bidirecional na web, conexao persistente, foje dos paradigmas req e res tradicional web
+póprio servidor envia mensagens ao cliente, sem a necessidade do cliente clicar em nada
+
+socket.io== instalar socket.io == npm install socket.io --save
+
+
+
+----------------------------
 
 

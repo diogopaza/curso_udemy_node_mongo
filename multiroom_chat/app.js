@@ -8,13 +8,15 @@ var server = app.listen(80,function(){
     console.log('servidor online')
 })
 
-io = require('socket.io').listen(server);
+var io = require('socket.io').listen(server);
 /*  criar a conexao por websocket*/
+/* varial global*/
+app.set('io',io)
 
 io.on('connection',function(socket){
     console.log('Usuario conectou')
     socket.on('disconnect',function(){
         console.log('descoonectou')
     })
-    
+
 })
