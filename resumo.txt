@@ -116,14 +116,14 @@ NOSQL - AUSENCIA DA LINGUAGEM NOSQL
 INSTALAR MONGODB
 
 mongod.exe sobe o servidor
-ele pede pastat data/db para salvar os dados
+ele pede pasta data/db para salvar os dados
 
 Manipular dados no cliente do mongodb
 
 sistemas gerenciadores de banco de dados
 Dentro temos varios banco de dados
 
-show dbs = exibi databases
+show dbs = exibe databases
 
 use = tambem cria banco de dados, prepara
 
@@ -131,7 +131,23 @@ use_nome
 
 db.dropDatabase() = elimina banco de dados
 
-npm i mongodb --save
+COLLECTIONS
+são as tabelas do sql
+
+db.createCollection('nome')
+
+db.getCollectionName()
+retorna as collections do meu banco
+
+REMOVER collection
+db.nomeCollection.drop()
+
+documento em mongo sao JSON
+
+db.nomeCollection.save( { passa o json ex: nome:'diogo',idade:'35'})
+
+db.nomeCollection.find()   mostra o json dentro da collection
+
 
 
 
