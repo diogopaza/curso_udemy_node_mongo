@@ -109,5 +109,33 @@ socket.io== instalar socket.io == npm install socket.io --save
 
 
 ----------------------------
+MONGO DB
+
+NOSQL - AUSENCIA DA LINGUAGEM NOSQL
+
+INSTALAR MONGODB
+
+mongod.exe sobe o servidor
+ele pede pastat data/db para salvar os dados
+
+Manipular dados no cliente do mongodb
+
+sistemas gerenciadores de banco de dados
+Dentro temos varios banco de dados
+
+show dbs = exibi databases
+
+use = tambem cria banco de dados, prepara
+
+use_nome
+
+db.dropDatabase() = elimina banco de dados
+
+npm i mongodb --save
+
+
+
+
+
 
 
