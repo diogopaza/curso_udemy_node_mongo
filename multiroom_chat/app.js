@@ -19,11 +19,19 @@ io.on('connection',function(socket){
         console.log('descoonectou')
     })
 
-    socket.on('msgParaServidor', function(data){
+    socket.on('msgParaServidor', function(data){        
 
        socket.emit('msgParaCliente', {apelido: data.apelido, mensagem: data.meuTexto})
     
        socket.broadcast.emit('msgParaCliente', {apelido: data.apelido, mensagem: data.meuTexto})
+        if(parseInt( data.apelidoAtualizado ) == 0 ){
+
+            socket.emit('participantesParaCliente', {apelido: data.apelido})
+            
+            socket.broadcast.emit('participantesParaCliente', {apelido: data.apelido})
+
+        }
+       
     
     })
         
