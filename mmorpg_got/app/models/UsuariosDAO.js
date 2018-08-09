@@ -1,10 +1,10 @@
-mongo = require('../../config/dbConnection')
 
-function UsuariosDAO(application, req, res){
+
+function UsuariosDAO(connection){
     
-    var connection = application.config.dbConnection.myDB()
-    db = connection.db('got')
-    console.log('ok')
+    
+    this._db = connection.db('got')
+    
    
     //tt = mongo.db('hjkjhkjhkj')
   
@@ -18,9 +18,14 @@ function UsuariosDAO(application, req, res){
 
 }
 
-UsuariosDAO.prototype.inserirUsuario = function(usuario){
-   console.log('to no usuarioDAO')
-   
+UsuariosDAO.prototype.inserirUsuario = async function(usuario){
+    
+   this._db.collection('user', function(err, collection){
+
+        collection.insert(usuario)
+
+   })
+    
 
     //const collection = this._connection.collection('teste')
    

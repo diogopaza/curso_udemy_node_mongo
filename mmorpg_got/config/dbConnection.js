@@ -5,7 +5,7 @@ const assert = require('assert');
 const url = 'mongodb://localhost:27017';
 
 // Database Name
-const dbName = 'got';
+
 var _db
 
 exports.conectar = async function(callback){
