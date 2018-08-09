@@ -248,6 +248,16 @@ db.livros.remove( {valor:{$lt:30}})
 
 
 
+MMORPG
+
+
+1 - Driver do MONGODB
+
+npm i mongodb --save
+
+2- configurar o mongodb
+
+3-
 
 
 
