@@ -28,9 +28,10 @@ UsuariosDAO.prototype.inserirUsuario = async function(usuario){
     
 
     //const collection = this._connection.collection('teste')
-   
-   
-    
+}
+
+UsuariosDAO.prototype.autenticar = function(usuario){
+    console.log(usuario)
 
 }
 

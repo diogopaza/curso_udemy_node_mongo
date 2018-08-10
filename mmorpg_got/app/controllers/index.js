@@ -1,3 +1,5 @@
+
+
 module.exports.index = function(application, req, res){
     
         res.render('index', { validacao:{} });
@@ -16,7 +18,9 @@ module.exports.index = function(application, req, res){
                res.render('index', {validacao:erros})
                return
            }
-
-           res.send('tudo ok para criar a sessao')
+           connection = application.config.dbConnection.myDB();
+           var UsuariosDAO = new application.app.models.UsuariosDAO( connection )
+           UsuariosDAO.autenticar(dados)
+           res.end()
         
         }

@@ -269,7 +269,8 @@ fornece um cookie
 npm install express-session --save
 
 
-
+/* a função find do mongo retorna um curso ou seja uma posição
+usando junto a função toArray() teremos os dados dentro deste cursor
 
 
 
