@@ -20,7 +20,7 @@ module.exports.index = function(application, req, res){
            }
            connection = application.config.dbConnection.myDB();
            var UsuariosDAO = new application.app.models.UsuariosDAO( connection )
-           UsuariosDAO.autenticar(dados)
-           res.end()
+           UsuariosDAO.autenticar(dados, req, res)
+          
         
         }
