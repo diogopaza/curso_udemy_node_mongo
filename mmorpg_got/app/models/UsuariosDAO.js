@@ -42,7 +42,7 @@ UsuariosDAO.prototype.autenticar = function(usuario, req, res){
 
                     }
                     if(req.session.autorizado){
-                        res.redirect('jogo')
+                        res.render('jogo')
                     }else{
                         res.render('index', {validacao:{} })
                        

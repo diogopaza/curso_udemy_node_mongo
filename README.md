@@ -272,5 +272,9 @@ npm install express-session --save
 /* a função find do mongo retorna um curso ou seja uma posição
 usando junto a função toArray() teremos os dados dentro deste cursor
 
+recurso de sessão é muito simples fácil de se trabalhar
+
+
+
 
 
