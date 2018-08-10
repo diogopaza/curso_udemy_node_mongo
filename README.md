@@ -260,9 +260,13 @@ npm i mongodb --save
 3-
 
 
+Express-Session 
 
+Estudo de sessões com o Express-Session
+É um middleware
+fornece um cookie 
 
-
+npm install express-session --save
 
 
 
