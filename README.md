@@ -1,9 +1,9 @@
 curso node - - - udemy
 
-requisi��es http::
+requisições http::
 
 npm install express -save(salva dentro do projeto o 
-nmp j� baixa as dependencias o  module vai junto com
+nmp já baixa as dependencias o  module vai junto com
 o projeto)
 
 EJS ===
@@ -16,15 +16,15 @@ caso queira mudar caminho das app.set('views', './app/views')
 permitir escrever paginas html com javascript
 engine de paginas 
 
-informa para o expresse que o engine de view � o ejs
+informa para o expresse que o engine de view é o ejs
 --------------------------
 
 commonJS
 module.exports = variavel
-ou fun��o anonima
+ou função anonima
 module.exports = function(){}
 
-define as constru��es de m�dulos
+define as construções de módulos
 permite incorporar modulos as node
 
 ----------------------------------
@@ -275,6 +275,11 @@ usando junto a função toArray() teremos os dados dentro deste cursor
 recurso de sessão é muito simples fácil de se trabalhar
 
 
+DETALHES 
 
-
+<i>
+res.render('jogo') == vai abrir a view jogo
+res.redirect('jogo') == vai abrir a rota /jogo
+</i>
+<hr>
 
