@@ -278,8 +278,8 @@ recurso de sessão é muito simples fácil de se trabalhar
 DETALHES 
 
 <i>
-res.render('jogo') == vai abrir a view jogo
-res.redirect('jogo') == vai abrir a rota /jogo
+<p>res.render('jogo') == vai abrir a view jogo</p>
+<p>res.redirect('jogo') == vai abrir a rota /jogo</p>
 </i>
 <hr>
 
