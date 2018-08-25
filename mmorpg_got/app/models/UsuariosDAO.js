@@ -34,6 +34,7 @@ UsuariosDAO.prototype.autenticar = function(usuario, req, res){
     this._db.collection('user', function(err, collection){
         
                 collection.find( usuario ).toArray(function(err, result){
+                   
                     if(result[0] != undefined){
                         req.session.autorizado = true;
                         req.session.usuario = result[0].usuario;
@@ -42,7 +43,7 @@ UsuariosDAO.prototype.autenticar = function(usuario, req, res){
 
                     }
                     if(req.session.autorizado){
-                        res.render('jogo')
+                        res.render('jogo', { img_casa: req.session.casa})
                     }else{
                         res.render('index', {validacao:{} })
                        
